@@ -63,9 +63,6 @@ favicon: /favicon.ico
 apple_touch_icon: /assets/logo.png
 logo: /assets/img/logo.png
 
-kramdown:
-  math_engine:         mathjax
-  math_engine_opts:    {}
 
 plugins:
   - jekyll-default-layout
