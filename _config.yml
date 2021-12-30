@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jorge-alda.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Jorge-Alda
+repository: Jorge-Alda/Jorge-Alda.github.io
 author:
   name: Jorge Alda
   social:
@@ -94,3 +95,31 @@ collections:
 
 paginate:      10
 paginate_path: /blog/:num/ #!!
+
+comments:
+  provider: giscus
+  giscus:
+    repo: "Jorge-Alda/Jorge-Alda.github.io"
+    repo-id: "R_kgDOGmh1NA"
+    categoy: "General"
+    category-id: "DIC_kwDOGmh1NM4CAe5P"
+    mapping: "pathname"
+    reaction-enabled: "1"
+    theme: "transparent_dark"
+    crossorigin: "anonymous"
+
+hydejack:
+  post_addons: [comments]
+  no_mark_external: true
+  no_page_style: true
+
+defaults:
+  - scope:
+      type: post
+    value:
+      comments: true
+
+kramdown:
+  math_engine:         mathjax
+  math_engine_opts:    {}
+  footnote_backlink:   '&#x21a9;&#xfe0e;'
