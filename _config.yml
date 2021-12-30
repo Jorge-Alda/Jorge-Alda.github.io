@@ -61,7 +61,7 @@ accent_color: rgb(179,235,60)
 theme_color: rgb(30,60,2)
 accent_image: none
 favicon: /favicon.ico
-apple_touch_icon: /assets/logo.png
+apple_touch_icon: /assets/img/logo.png
 logo: /assets/img/logo.png
 
 
@@ -114,6 +114,6 @@ hydejack:
 
 
 kramdown:
-  math_engine:         mathjax
-  math_engine_opts:    {}
-  footnote_backlink:   '&#x21a9;&#xfe0e;'
+#  math_engine:         mathjax
+#  math_engine_opts:    {}
+#  footnote_backlink:   '&#x21a9;&#xfe0e;'
