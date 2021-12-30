@@ -1,0 +1,99 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Jorge Alda
+description: >- # this means to ignore newlines until "baseurl:"
+  Personal webpage, Jorge Alda
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jorge-alda.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  Jorge-Alda
+author:
+  name: Jorge Alda
+  social:
+    github: Jorge-Alda
+    email: jalda@unizar.es
+lang: en
+
+# Build settings
+remote_theme: hydecorp/hydejack@v9.1.5
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+accent_color: rgb(179,235,60)
+theme_color: rgb(30,60,2)
+accent_image: none
+favicon: /favicon.ico
+apple_touch_icon: /assets/logo.png
+logo: /assets/img/logo.png
+
+kramdown:
+  math_engine:         mathjax
+  math_engine_opts:    {}
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-last-modified-at
+
+menu:
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+
+collections:
+  featured_categories:
+    permalink:         /:name/
+    output:            true
+  featured_tags:
+    permalink:         /tag-:name/
+    output:            true
+
+paginate:      10
+paginate_path: /blog/:num/ #!!
