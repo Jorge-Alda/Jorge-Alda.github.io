@@ -109,15 +109,9 @@ comments:
     crossorigin: "anonymous"
 
 hydejack:
-  post_addons: [comments]
   no_mark_external: true
   no_page_style: true
 
-defaults:
-  - scope:
-      type: post
-    value:
-      comments: true
 
 kramdown:
   math_engine:         mathjax
