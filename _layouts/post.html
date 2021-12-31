@@ -39,6 +39,6 @@ hide_description=page.hide_description %}
 {% endfor %}
 
 <aside class="comments related" role="complementary">
-    <h2 class="hr-bottom">{{ site.data.strings.comments | default:"Comments" }}</h2>
+    <h2 class="hr-bottom" , id="comments">{{ site.data.strings.comments | default:"Comments" }}</h2>
     {% include giscus.html %}
 </aside>
