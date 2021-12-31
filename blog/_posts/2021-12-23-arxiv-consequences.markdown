@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Consequences of \\(b\\, \\to\\, s\\, \\mu^+\\, \\mu^-\\) anomalies on \\(B \\, \\to \\, K^{(\*)} \\,\\nu\\, \\bar{\\nu}\\), \\(B\_s \\to\\, (\\eta,\\eta') \\, \\nu\\,\\bar{\\nu}\\) and \\(B\_s \\, \\to \\, \\phi\\, \\nu\\, \\bar{\\nu}\\) decay observables"
+title:  "Consequences of \\(b\\, \\to\\, s\\, \\mu^+\\, \\mu^-\\) anomalies on \\(B \\, \\to \\, K^{(*)} \\,\\nu\\, \\bar{\\nu}\\), \\(B\_s \\to\\, (\\eta,\\eta') \\, \\nu\\,\\bar{\\nu}\\) and \\(B\_s \\, \\to \\, \\phi\\, \\nu\\, \\bar{\\nu}\\) decay observables"
 date:   2021-12-23 09:29:52 +0100
 categories: blog
 tags: [eft,b-anomalies,arXiv]
