@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "latitude": 41.6421,
+        "longitude": -0.8998,
+        "title": "Universidad de Zaragoza"
+    },
+    {
+        "id": 2,
+        "latitude": 40.45112,
+        "longitude": -3.72614,
+        "title": "Universidad Complutense de Madrid"
+    },
+    {
+        "id": 3,
+        "latitude": 42.603202,
+        "longitude": 0.5227768,
+        "title": "Centro de Ciencias de Benasque Pedro Pascual"
+    },
+    {
+        "id": 4,
+        "latitude": 40.96572,
+        "longitude": -5.66988,
+        "title": "Hospedería Fonseca, Salamanca"
+    },
+    {
+        "id": 5,
+        "latitude": 45.40901,
+        "longitude": 11.88610,
+        "title": "Università degli Studi di Padova"
+    }
+]

@@ -16,4 +16,6 @@ I was born in Calatayud (Zaragoza, Spain) in 1993. I'm currently finalishing my 
 * M.Sc in Theoretical Physics, Universidad Complutense de Madrid.
 * Research stay in Università degli Studi di Padova.
 
+You can check out all the places where I have been to in [my Worldline](worldline.html).
+
 When I'm not busy uncovering the structure of the universe, my interests also include coding, comic books and movies, RPG videogames and languages.

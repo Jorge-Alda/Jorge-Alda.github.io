@@ -1,0 +1,72 @@
+---
+permalink: /worldline.html
+layout: plain
+title: My Worldline
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<div id="map" style="width: 600px; height: 400px;"></div>
+<script>
+
+    var map = L.map('map').setView([44.669, 4.087], 5);
+    var OpenStreetMap_Mapnik = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    let iconOption = {
+        iconUrl: "/assets/img/marker.svg",
+        iconSize: [30, 30],
+    };
+    let ourCustomIcon = L.icon(iconOption);
+
+    fetch("/assets/locations.json")
+        .then((response) => response.json())
+        .then((data) => {
+            ourData = data;
+            for (let i = 0; i < data.length; i++) {
+
+                let marker = L.marker([data[i].latitude, data[i].longitude], {
+                    icon: ourCustomIcon,
+                })
+                    .bindPopup(
+                        `<b> ${data[i].title} </b>`
+                    )
+                    .on("click", () => {
+                        map.flyTo([data[i].latitude, data[i].longitude], 12);
+                    })
+                    .addTo(map);
+            }
+        })
+        .catch((error) => alert(error));
+
+
+</script>
+
+
+
+</body>
+
+</html>
