@@ -1,60 +1,44 @@
 ---
+# Copyright (c) 2018 Florian Klampfer
+<https: //qwtel.com />
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see
+<http: //www.gnu.org/licenses />.
+
 layout: base
 ---
 
-{% include header.html type="post" %}
+{% assign version = jekyll.version | split:'.' %}
+{% assign major = version[0] | plus:0 %}
+{% assign minor = version[1] | plus:0 %}
+{% assign patch = version[2] | plus:0 %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+{% include_cached components/post.html post=page no_link_title=true no_excerpt=true hide_image=page.hide_image
+hide_description=page.hide_description %}
 
-            <article role="main" class="blog-post">
-                {{ content }}
-            </article>
+{% include components/dingbat.html %}
 
-            <!--      <span class="post-categories">[-->
-            <!--					  {% for tag in page.tags %}-->
-            <!--						{% capture tag_name %}{{ tag }}{% endcapture %}-->
-            <!--						<img src="../img/tag-solid.svg" style="width:1em" alt="tag">-->
-            <!--						<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>-->
-            <!--					  {% endfor %}-->
-            <!--					]</span>-->
+{% assign addons = page.addons | default:site.hydejack.post_addons %}
+{% unless addons %}{% assign addons = "about,newsletter,related,random" | split:"," %}{% endunless %}
+{% for addon in addons %}
+{% case addon %}
+{% when 'about' %}
+{% include_cached components/about.html author=page.author %}
+{% endcase %}
+{% endfor %}
 
-            <br>
-
-
-            <ul class="pager blog-pager">
-                {% if page.previous.url %}
-                <li class="previous">
-                    <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-                        data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                </li>
-                {% endif %}
-                {% if page.next.url %}
-                <li class="next">
-                    <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-                        data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                </li>
-                {% endif %}
-            </ul>
-            <br>
-        </div>
-    </div>
-</div>
-
-<!-- https://www.bryanbraun.com/anchorjs/ -->
-<script>
-    anchors.options = {
-        position: 'left'
-    };
-    anchors.add('h1:not(.no-anchor)', 'h2', 'h3');
-</script>
-
-{% include mathjax-custom.html %}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-            {% include giscus.html %}
-        </div>
-    </div>
-</div>
+<aside class="comments related" role="complementary">
+    <h2 class="hr-bottom">{{ site.data.strings.comments | default:"Comments" }}</h2>
+    {% include giscus.html %}
+</aside>
