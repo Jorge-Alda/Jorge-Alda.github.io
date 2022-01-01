@@ -4,12 +4,6 @@ layout: plain
 title: My Worldline
 ---
 
-<!DOCTYPE html>
-<html>
-
-<head>
-
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -21,13 +15,12 @@ title: My Worldline
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
 
 
 
-
-</head>
-
-<div id="map" style="width: 600px; height: 400px;"></div>
+<div id="map" style="width: 800px; height: 400px;"></div>
+<div id="tline" style="width: 800px;"></div>
 <script>
 
     var map = L.map('map').setView([44.669, 4.087], 5);
@@ -61,12 +54,33 @@ title: My Worldline
             }
         })
         .catch((error) => alert(error));
-
+                                    $.ajax({
+                                        url: "/assets/events.json",
+                                        success: function (data) {
+                                            var container = document.getElementById("tline");
+                                            var its = new vis.DataSet(data);
+                                            var groups = new vis.DataSet([{ "id": 0, "content": "Education" }, { "id": 1, "content": "Talk" }]);
+                                            var options = {
+                                                tooltip: {
+                                                    followMouse: true,
+                                                    overflowMethod: 'cap'
+                                                },
+                                                groupOrder: 'id'
+                                            };
+                                            var timeline = new vis.Timeline(container, its, options);
+                                            timeline.setGroups(groups);
+                                        },
+                                        error: function (err) {
+                                            console.log("Error", err);
+                                            if (err.status === 0) {
+                                                alert(
+                                                    "Failed to load assets/events.json.\nPlease run this example on a server."
+                                                );
+                                            } else {
+                                                alert("Failed to load assets/events.json.");
+                                            }
+                                        },
+                                    });
 
 </script>
 
-
-
-</body>
-
-</html>

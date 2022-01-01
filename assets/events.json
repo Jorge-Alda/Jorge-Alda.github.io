@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "content": "B.Sc. in Physics",
+        "title": "B.Sc. in Physics",
+        "start": "2011-09-01",
+        "end": "2015-07-01",
+        "group": 0
+    },
+    {
+        "id": 2,
+        "content": "M.Sc. in Theoretical Physics",
+        "title": "M.Sc. in Theoretical Physics",
+        "start": "2015-09-01",
+        "end": "2016-07-01",
+        "group": 0
+    },
+    {
+        "id": 3,
+        "content": "Ph.D. in Physics",
+        "title": "Ph.D. in Physics",
+        "start": "2016-10-01",
+        "end": "2022-04-01",
+        "group": 0
+    },
+    {
+        "id": 4,
+        "content": "Invited Researcher",
+        "title": "Invited Researcher",
+        "start": "2021-06-17",
+        "end": "2021-09-17",
+        "group": 0
+    },
+    {
+        "id": 5,
+        "content": "Red LHC Workshop",
+        "title": "2nd Red LHC Workshop",
+        "start": "2018-05-09",
+        "end": "2018-05-11",
+        "group": 1
+    },
+    {
+        "id": 6,
+        "content": "TAE",
+        "title": "Taller de Altas Energías",
+        "start": "2018-09-02",
+        "end": "2018-09-15",
+        "group": 0
+    },
+    {
+        "id": 7,
+        "content": "CPAN Days",
+        "title": "X CPAN Days",
+        "start": "2018-10-29",
+        "end": "2018-10-31",
+        "group": 1
+    },
+    {
+        "id": 8,
+        "content": "Jornadas CAPA",
+        "title": "I Jornadas de Jóvenes Investigadores CAPA",
+        "start": "2019-05-07",
+        "group": 1,
+        "type": "point"
+    },
+    {
+        "id": 9,
+        "content": "Jornadas PhD",
+        "title": "I Jornadas del Programa de Doctorado de Física",
+        "start": "2019-06-20",
+        "group": 1,
+        "type": "point"
+    },
+    {
+        "id": 10,
+        "content": "Bienal RSEF",
+        "title": "XXXVII Bienal de Física de la Real Sociedad Española de Física",
+        "start": "2019-07-15",
+        "end": "2019-07-19",
+        "group": 1
+    },
+    {
+        "id": 11,
+        "content": "LCWS2021",
+        "title": "International Workshop on Future Linear Colliders",
+        "start": "2021-03-18",
+        "end": "2021-03-21",
+        "group": 1
+    },
+    {
+        "id": 12,
+        "content": "EPS-HEP21",
+        "title": "European Physical Society Conference on High Energy Physics 2021",
+        "start": "2021-07-26",
+        "end": "2021-07-30",
+        "group": 1
+    },
+    {
+        "id": 13,
+        "content": "Seminar",
+        "title": "Seminars of the Department of Theoretical Physics",
+        "start": "2021-11-18",
+        "type": "point",
+        "group": 1
+    },
+    {
+        "id": 14,
+        "content": "Jornadas PhD",
+        "title": "II Jornadas del Programa de Doctorado de Física",
+        "start": "2021-12-03",
+        "type": "point",
+        "group": 1
+    }
+]
