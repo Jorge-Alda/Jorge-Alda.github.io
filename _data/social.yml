@@ -2,3 +2,22 @@ orcid:
   name: ORCiD
   icon: icon-orcid
   prepend: "https://orcid.org/"
+steam:
+  name: Steam
+  icon: icon-steam
+  prepend: "http://steamcommunity.com/id/"
+telegram:
+  name: Telegram
+  icon: icon-telegram
+  prepend: "https://t.me/"
+discord:
+  name: Discord
+  icon: icon-discord
+  prepend: "https://discord.gg/"
+spotify:
+  name: Spotify
+  icon: icon-spotify
+  prepend: "https://open.spotify.com/user/"
+calendar:
+  name: Calendar
+  icon: icon-calendar
