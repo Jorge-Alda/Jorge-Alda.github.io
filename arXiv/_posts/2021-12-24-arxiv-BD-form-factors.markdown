@@ -2,8 +2,8 @@
 layout: post
 title:  "\\(B\\to D \\ell \\nu\_\\ell\\) form factors beyond leading power and extraction of \\(|V\_{cb}|\\) and \\(R(D)\\)"
 date:   2021-12-24 09:29:52 +0100
-categories: blog
-tags: [b-anomalies,arXiv]
+categories: arXiv
+tags: [b-anomalies]
 ---
 
  **Jing Gao, Tobias Huber, Yao Ji, Chao Wang, Yu-Ming Wang, Yan-Bing Wei**

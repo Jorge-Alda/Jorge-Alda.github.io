@@ -2,8 +2,8 @@
 layout: post
 title:  "Four-fermion operators at dimension 6: dispersion relations and UV completions"
 date:   2021-12-08 09:29:52 +0100
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Aleksandr Azatov, Diptimoy Ghosh, Amartya Harsh Singh**

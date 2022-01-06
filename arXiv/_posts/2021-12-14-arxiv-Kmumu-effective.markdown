@@ -2,8 +2,8 @@
 layout: post
 title:  "\\(K \\to \\mu^+ \\mu^-\\) beyond the standard model"
 date:   2021-12-14 09:29:52 +0100
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Avital Dery, Mitrajyoti Ghosh**

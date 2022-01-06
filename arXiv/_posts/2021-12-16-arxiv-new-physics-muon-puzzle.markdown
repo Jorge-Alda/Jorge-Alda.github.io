@@ -2,8 +2,8 @@
 layout: post
 title:  "New physics behind the new muon \\(g-2\\) puzzle?"
 date:   2021-12-16 09:29:52 +0100
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Luca Di Luzio, Antonio Masiero, Paride Paradisi, Massimo Passera**

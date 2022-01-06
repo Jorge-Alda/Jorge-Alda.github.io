@@ -88,6 +88,8 @@ plugins:
 menu:
   - title: Blog
     url: /blog/
+  - title: Around the arXiv
+    url: /arxiv/
   - title: About
     url: /about/
 

@@ -2,8 +2,8 @@
 layout: post
 title:  "Axion anomalies"
 date:   2021-12-15 09:29:52 +0100
-categories: blog
-tags: [axions,arXiv]
+categories: arXiv
+tags: [axions]
 ---
 
  **Peter Adshead, Kaloian D. Lozanov**

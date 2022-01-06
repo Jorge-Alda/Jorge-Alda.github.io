@@ -2,8 +2,8 @@
 layout: post
 title:  "Beyond Jarlskog: 699 invariants for CP violation in SMEFT"
 date:   2021-12-08 09:29:52 +0100
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Quentin Bonnefoy, Emanuele Gendy, Christophe Grojean, Joshua T. Ruderman**

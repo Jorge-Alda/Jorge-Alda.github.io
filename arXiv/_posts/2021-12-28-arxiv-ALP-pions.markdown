@@ -2,8 +2,8 @@
 layout: post
 title:  "ALP-Pions generalized"
 date:   2021-12-28 09:29:52 +0100
-categories: blog
-tags: [axions,arXiv]
+categories: arXiv
+tags: [axions]
 ---
 
  **Triparno Bandyopadhyay, Subhajit Ghosh, Tuhin S. Roy**

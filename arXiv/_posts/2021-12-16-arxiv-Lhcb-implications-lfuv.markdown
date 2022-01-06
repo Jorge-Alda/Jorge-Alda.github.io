@@ -2,8 +2,8 @@
 layout: post
 title:  "Implications of LHCb Data for Lepton Flavour Universality Violation"
 date:   2021-12-16 09:29:52 +0100
-categories: blog
-tags: [eft,b-anomalies,arXiv]
+categories: arXiv
+tags: [eft,b-anomalies]
 ---
 
  **T. Hurth, F. Mahmoudi, D. Martinez Santos, S. Neshatpour**

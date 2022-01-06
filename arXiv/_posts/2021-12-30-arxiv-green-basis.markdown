@@ -3,8 +3,8 @@ layout: post
 title:  "A Green's basis for the bosonic SMEFT to dimension 8"
 date:   2021-12-24 09:29:52 +0100
 tags: "Green basis"
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Mikael Chala, Álvaro Díaz-Carmona, Guilherme Guedes**

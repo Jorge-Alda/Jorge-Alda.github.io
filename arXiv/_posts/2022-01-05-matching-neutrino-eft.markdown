@@ -2,8 +2,8 @@
 layout: post
 title: "One-Loop Matching Conditions in Neutrino Effective Theory"
 date: 2022-01-05 09:20:39
-categories: blog
-tags: [eft,neutrinos,arXiv]
+categories: arXiv
+tags: [eft,neutrinos]
 ---
 
 **Tommy Ohlsson, Marcus Pernow**

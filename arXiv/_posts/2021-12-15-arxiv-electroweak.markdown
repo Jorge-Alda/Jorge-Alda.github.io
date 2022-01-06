@@ -2,8 +2,8 @@
 layout: post
 title:  "Global analysis of electroweak data in the Standard Model"
 date:   2021-12-15 09:29:52 +0100
-categories: blog
-tags: [arXiv]
+categories: arXiv
+tags: []
 ---
 
  **J. de Blas, M. Ciuchini, E. Franco, A. Goncalves, S. Mishima, M. Pierini, L. Reina, L. Silvestrini**

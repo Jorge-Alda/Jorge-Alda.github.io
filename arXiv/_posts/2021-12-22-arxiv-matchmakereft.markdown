@@ -2,8 +2,8 @@
 layout: post
 title:  "Matchmakereft: automated tree-level and one-loop matching"
 date:   2021-12-22 09:29:52 +0100
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
  **Adrian Carmona, Achilleas Lazopoulos, Pablo Olgoso, Jose Santiago**

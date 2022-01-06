@@ -2,8 +2,8 @@
 layout: post
 title:  "Revisiting mono-\\(\\tau\\) tails at the LHC"
 date:   2021-12-30 09:29:52 +0100
-categories: blog
-tags: [b-anomalies,arXiv]
+categories: arXiv
+tags: [b-anomalies]
 ---
 
  **Florentin Jaffredo**

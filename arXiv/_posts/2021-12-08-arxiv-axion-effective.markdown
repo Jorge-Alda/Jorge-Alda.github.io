@@ -2,8 +2,8 @@
 layout: post
 title:  "Axion Effective Action"
 date:   2021-12-08 09:29:52 +0100
-categories: blog
-tags: [eft,axions,arXiv]
+categories: arXiv
+tags: [eft,axions]
 ---
 
  **Jérémie Quevillon, Christopher Smith, Pham Ngoc Hoa Vuong**

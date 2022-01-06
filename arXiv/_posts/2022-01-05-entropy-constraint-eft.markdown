@@ -2,8 +2,8 @@
 layout: post
 title: "Entropy Constraint on Effective Field Theory"
 date: 2022-01-05 09:26:21
-categories: blog
-tags: [eft,arXiv]
+categories: arXiv
+tags: [eft]
 ---
 
 **Qing-Hong Cao, Daiki Ueda**
