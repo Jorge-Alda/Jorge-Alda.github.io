@@ -110,5 +110,13 @@
         "start": "2021-12-03",
         "type": "point",
         "group": 1
+    },
+    {
+        "id": 15,
+        "content": "Seminar",
+        "title": "Seminars of the Department of Theoretical Physics",
+        "start": "2022-01-20",
+        "type": "point",
+        "group": 1
     }
 ]
