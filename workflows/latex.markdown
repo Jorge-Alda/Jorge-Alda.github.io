@@ -19,6 +19,27 @@ As the TeX distribution I use TeXlive. If you're on Ubuntu, like me, make sure
 to not install texlive using `apt`, as that version will probably be very
 outdated. See for example [this guide](https://fahim-sikder.github.io/post/installing-texlive-latest-ubuntu/) for how to install the right version.
 
+### Advanced: GitHub Actions
+
+Hosting the git repository allows to run some post-processing of the files,
+or "continuous integration" in the jargon, using [GitHub Actions](https://github.com/features/actions). When certain events are triggered in the repo (for example,
+pushing or publishing a tag), GitHub Actions executes the instructions stored in
+the `.yaml` files inside the folder `.github/workflows`. 
+
+I have a [GitHub action](https://gist.github.com/Jorge-Alda/375ed2213467e4b897d3d0aab21485b0) 
+that compiles a TeX file to pdf and also prepares a `.zip` file ready to upload 
+to arXiv. To install the action, you only have to copy it in the folder and change
+the filename in line 5 to the name of your main `.tex` (it has to be located in the
+base directory of the repo). To execute it, you have to create and push a tag with
+
+```bash
+git tag -a versionnumber
+git push --tags
+```
+
+After a couple of minutes, the `.pdf` and `.zip` files will be available at the
+"Releases" section of the GitHub repo page.
+
 ## Project structure
 
 The LaTeX project files should live in their own directory, with no code or anything else.
