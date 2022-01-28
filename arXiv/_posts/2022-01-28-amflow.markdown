@@ -1,0 +1,17 @@
+---
+layout: post
+title: "AMFlow: a Mathematica Package for Feynman integrals computation via Auxiliary Mass Flow"
+date: 2022-01-28 07:21:56
+categories: arXiv
+tags: [feynamn-integrals, numeric-software]
+---
+
+**Xiao Liu, Yan-Qing Ma**
+[![arXiv:2201.11669](https://img.shields.io/badge/arXiv-2201.11669-00ff00)](https://arxiv.org/abs/2201.11669)
+
+*Abstract:*
+AMFlow is a Mathematica package to numerically calculate dimensionally regularized Feynman integrals via the recently proposed auxiliary mass flow method, which sets up and solves differential equations of Feynman integrals with respect to an auxiliary mass parameter. Differential equations can be automatically computed using existed reduction packages. Boundary conditions can be calculated within the auxiliary mass flow framework. The differential equations are then solved numerically using generalized power series expansion method combining with numerical fit strategy. The main usages of the AMFlow package are discussed through an explicit example of double-box family involved in two-loop \\(t\\bar\{t\}\\) production.
+
+[Link](https://gitlab.com/multiloop-pku/amflow)
+
+See also: [arXiv:2201.11636](automatic-feynman-integrals-linear-propagators.html), [arXiv:2201.11637](feynman-integrals-linear-algebra.html)
