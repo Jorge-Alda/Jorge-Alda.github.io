@@ -118,5 +118,13 @@
         "start": "2022-01-20",
         "type": "point",
         "group": 1
+    },
+    {
+        "id": 16,
+        "content": "Seminar",
+        "title": "IFT Specialist-level Seminar",
+        "start": "2022-01-27",
+        "type": "point",
+        "group": 1
     }
 ]

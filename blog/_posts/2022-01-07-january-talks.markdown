@@ -9,7 +9,7 @@ tags: [talks]
 This month I have two scheduled talks,
 
 * **January 20, 12:10**: Seminar at the Theoretical Physics Department, UNIZAR (Zaragoza, Spain).
-* **January 27**: Seminar at IFT, UAM (Madrid, Spain).
+* **January 27**: Seminar at IFT, UAM (Madrid, Spain). [Link to video](https://www.youtube.com/watch?v=YTJ1-HS5CXw)
 
 Both talks have the title "Using Machine Learning techniques in phenomenological studies in flavour physics", and the following abstract:
 
