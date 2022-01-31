@@ -6,3 +6,4 @@ permalink: /workflows/
 
 
 * [LaTeX](latex)
+* [Python](python)
