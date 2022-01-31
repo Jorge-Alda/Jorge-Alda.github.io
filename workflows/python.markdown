@@ -68,3 +68,66 @@ exit the virtual environment with
 ```bash
 deactivate
 ```
+
+## Tests and coverage
+
+Tests are a way to check that your code does what is supposed to do. Tests are useful,
+for example, to detect an accidental change that breaks something or that is not
+backwards-compatible.
+
+I use `pytest`, which is probably the simplest test suite. In the `tests\` folder,
+add an empty `__init__.py` file, and one or several `.py` files, with filenames
+starting by `test_`, to contain the tests. In each file, write some functions, also
+with names starting with `test_`, one for each individual test. The results of the
+tests are determined by the `assert` statements: if the condition of the assert
+evaluates to `True`, the test passes, and else it fails. One simple example:
+
+```python
+def test_passing():
+    assert 2+2 == 4
+
+def test_failing():
+    assert 2+2 == 5
+```
+
+To test if the code raises the error that you expect, the syntax is a bit different:
+
+```python
+import pytest
+
+def test_division():
+    with pytest.raise(ZeroDivisionError):
+        1/0
+```
+
+Obviously, you'll need tests that check your code, and not just some mathematical
+expressions. Don't forget to `import` the modules containing the code.
+
+To run the tests, in the root directory execute the command
+
+```bash
+python -m pytest
+```
+
+Alternatively VSCode can detect the tests and run them just by pressing a button.
+
+Coverage is a measure of how many lines of your code are being watched by the tests.
+Install the package
+
+```bash
+pip install coverage
+```
+
+and run the command
+
+```bash
+coverage run -m pytest
+coverage report -m
+```
+
+to see what lines of your code are not covered by the tests.
+
+On top of running the tests locally, you can use GitHub actions in order
+to execute them in every push or pull request, with this
+[simple example](https://github.com/Jorge-Alda/consoleffects/blob/master/.github/workflows/pytest.yml). For the coverage, you can generate a [Codecov](https://codecov.io/gh/Jorge-Alda/consoleffects) report
+(needs a linked account) with [this action](https://github.com/Jorge-Alda/consoleffects/blob/master/.github/workflows/codecov.yml).
