@@ -131,3 +131,108 @@ On top of running the tests locally, you can use GitHub actions in order
 to execute them in every push or pull request, with this
 [simple example](https://github.com/Jorge-Alda/consoleffects/blob/master/.github/workflows/pytest.yml). For the coverage, you can generate a [Codecov](https://codecov.io/gh/Jorge-Alda/consoleffects) report
 (needs a linked account) with [this action](https://github.com/Jorge-Alda/consoleffects/blob/master/.github/workflows/codecov.yml).
+
+## Docstrings and documentation
+
+Docstrings are strings located at the start of a function, class or
+module used to documentate them. They always use triple-quotes. For
+functions and classes, there are several styles to format their contents.
+I will use the `google` style, which is very simple and legible. For example,
+
+```python
+def myfunction(a: str, b: int, c: bool = True) -> dict:
+    '''Short description of the function
+
+    Args:
+        a (str): Description of a.
+        b (int): Description of b.
+        c (bool, optional): Description of c. Defaults to True.
+
+    Returns:
+        dict: Description of the return value
+    '''
+```
+
+During run-time, you can see the docstring of any function using
+`help(myfunction)`.
+
+There are tools that compile these docstring into a full documentation, like
+Sphinx. Add to the `requirements.txt` the following
+
+```txt
+sphinx
+sphinxcontrib-napoleon
+```
+
+and run `pip install -r requirements.txt`. Now start sphinx with
+
+```bash
+mkdir docs
+cd docks
+sphinx-quickstart
+```
+
+Sphinx guides you through the process. Make sure to choose the option for
+separate folders for source and build (we will track the source and
+gitignore the build), and to activate `autodoc` and `githubpages`.
+
+Once the initial setup is ready, go to the `source` folder and open
+`conf.py`. Uncomment the lines `import os` and `import sys`, and tell
+Sphinx the location of your python files with
+
+```python
+sys.path.insert(0, os.path.abspath('../../myproject'))
+```
+
+Look for the `extensions = [`, and add to the list `'sphinx.ext.napoleon'`.
+
+Now we're ready to start adding the documentation files. First, open
+`index.rst` and add one line for each module in your project, without the
+extension `.py`. Be careful with spaces and indentations, you should have
+something like this:
+
+```rst
+Welcome to myproject's documentation!
+=====================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   
+   mymodule
+   anothermodule
+   moremodules
+
+Indices and tables
+==================
+
+```
+
+For each line that you added, create a `.rst` file with the same name, and
+with the text
+
+```rst
+mymodule
+--------
+
+.. automodule:: mymodule
+    :members:
+    :undoc-members:
+    :show-inheritance:
+```
+
+Execute the command
+
+```bash
+make html
+```
+
+to generate the documentation. Open with your browser the file
+`docs/build/html/index.html` to see a local preview of the documentation.
+
+To upload the documentation to GitHub pages, add [this action](https://github.com/Jorge-Alda/consoleffects/blob/master/.github/workflows/docs.yml)
+to your `.github/workflows` folder. Each time that you push, the results
+of `build html` will automatically be saved to the `gh-pages` branch of
+your repo. To publish it as a webpage, go to the Settings page of the
+GitHub repo, click on Pages, and select as source the `gh-pages` branch.
+The documentation will be available at `https://myusername.github.io/myproject/`, and always up-to-date with the chages you push.
