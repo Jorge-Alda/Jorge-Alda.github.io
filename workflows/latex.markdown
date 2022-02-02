@@ -142,19 +142,6 @@ where you want to insert the plot. For certain plots, for example scatter plots
 with many points, a `.pgf` takes too much to compile. In those cases, if possible,
 use a `.pdf`. Non-vectorial formats like `.png` or `jpg` should be the last option.
 
-For projects with non-`.pgf` images, it is recommended to use [git lfs](https://github.com/git-lfs/git-lfs).
-This tool makes easier for git and GitHub to manage large files, and doesn't
-modify your local copy. Once installed, run the following command
-
-```bash
-git lfs track "*.pdf"
-git lfs track "*.png"
-git lfs track "*.jpg"
-```
-
-Every file with those extensions will be managed by LFS, and you don't have to do
-anything else. The LFS settings are stored in a `.gitattributes` file.
-
 ## Subfiles
 
 For large projects, it's better to keep each chapter or section in a separate file.
