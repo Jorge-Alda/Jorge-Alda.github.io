@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Thesis"
+date: 2022-02-10 18:30:39
+categories: blog
+tags: [thesis]
+---
+
+Today I have deposited my PhD Thesis, titled "A Glance into Flavour Physics with Effective Field Theories and Machine Learning".
