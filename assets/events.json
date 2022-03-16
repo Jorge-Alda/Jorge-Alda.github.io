@@ -131,8 +131,8 @@
         "id": 17,
         "content": "XIII CPAN Days",
         "title": "XIII CPAN Days",
-        "start": "2022-03-22",
-        "type": "point",
+        "start": "2022-03-21",
+        "end": "2022-03-23",
         "group": 1
     }
 ]
