@@ -20,7 +20,7 @@
         "content": "Ph.D. in Physics",
         "title": "Ph.D. in Physics",
         "start": "2016-10-01",
-        "end": "2022-04-01",
+        "end": "2022-04-27",
         "group": 0
     },
     {
@@ -133,6 +133,14 @@
         "title": "XIII CPAN Days",
         "start": "2022-03-21",
         "end": "2022-03-23",
+        "group": 1
+    },
+    {
+        "id": 18,
+        "content": "CERN Workshop",
+        "title": "5th Inter-experiment Machine Learning Workshop",
+        "start": "2022-05-09",
+        "end": "2022-05-13",
         "group": 1
     }
 ]

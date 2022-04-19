@@ -34,5 +34,11 @@
         "latitude": 37.25569,
         "longitude": -6.94656,
         "title": "Casa Colón, Huelva"
+    },
+    {
+        "id": 7,
+        "latitude": 46.2332,
+        "longitude": 6.05543,
+        "title": "CERN"
     }
 ]
