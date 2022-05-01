@@ -67,12 +67,16 @@ title: My Worldline
                                             var container = document.getElementById("tline");
                                             var its = new vis.DataSet(data);
                                             var groups = new vis.DataSet([{ "id": 0, "content": "Education" }, { "id": 1, "content": "Talk" }]);
+                                            const now = new Date();
+                                            year = now.getFullYear();
                                             var options = {
                                                 tooltip: {
                                                     followMouse: true,
                                                     overflowMethod: 'cap'
                                                 },
-                                                groupOrder: 'id'
+                                                groupOrder: 'id',
+                                                min: new Date(2011, 0, 0),
+                                                max: new Date(year + 2, 0, 0),
                                             };
                                             var timeline = new vis.Timeline(container, its, options);
                                             timeline.setGroups(groups);
@@ -83,19 +87,13 @@ title: My Worldline
                                                 timeline.zoomOut(0.25);
                                             };
                                             document.getElementById("year").onclick = function () {
-                                                const now = new Date();
-                                                year = now.getFullYear();
                                                 timeline.setWindow({
                                                     start: new Date(year, 0, 0),
                                                     end: new Date(year + 1, 0, 0)
                                                 });
                                             };
                                             document.getElementById("restoreView").onclick = function () {
-                                                const now = new Date();
-                                                timeline.setWindow({
-                                                    start: new Date(2011, 8, 0),
-                                                    end: now
-                                                });
+                                                timeline.fit();
                                             };
                                         },
                                         error: function (err) {
