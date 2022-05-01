@@ -20,7 +20,14 @@ title: My Worldline
 
 
 <div id="map" style="width: 100%; height: 400px;"></div>
-<div id="tline" style="width: 100%;"></div>
+<div id="tline" style="width: 100%;">
+    <div class="menu">
+        <input type="button" id="zoomIn" value="+" />
+        <input type="button" id="zoomOut" value="-" />
+        <input type="button" id="year" value="Current year" />
+        <input type="button" id="restoreView" value="Restore view" />
+    </div>
+</div>
 <script>
 
     var map = L.map('map').setView([44.669, 4.087], 5);
@@ -69,6 +76,27 @@ title: My Worldline
                                             };
                                             var timeline = new vis.Timeline(container, its, options);
                                             timeline.setGroups(groups);
+                                            document.getElementById("zoomIn").onclick = function () {
+                                                timeline.zoomIn(0.25);
+                                            };
+                                            document.getElementById("zoomOut").onclick = function () {
+                                                timeline.zoomOut(0.25);
+                                            };
+                                            document.getElementById("year").onclick = function () {
+                                                const now = new Date();
+                                                year = now.getFullYear();
+                                                timeline.setWindow({
+                                                    start: new Date(year, 0, 0),
+                                                    end: new Date(year + 1, 0, 0)
+                                                });
+                                            };
+                                            document.getElementById("restoreView").onclick = function () {
+                                                const now = new Date();
+                                                timeline.setWindow({
+                                                    start: new Date(2011, 8, 0),
+                                                    end: now
+                                                });
+                                            };
                                         },
                                         error: function (err) {
                                             console.log("Error", err);
