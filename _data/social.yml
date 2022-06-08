@@ -21,3 +21,7 @@ spotify:
 calendar:
   name: Calendar
   icon: icon-calendar
+matrix:
+  name: Matrix
+  icon: icon-matrix
+  prepend: "https://matrix.to/#/"
