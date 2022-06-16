@@ -13,3 +13,7 @@ I will defend my PhD Thesis
 * Sala de Grados, Facultad de Ciencias, Universidad de Zaragoza//Zoom
 
 The slides will be available [at my repo](https://github.com/Jorge-Alda/Slides), in their [corresponding branch](https://github.com/Jorge-Alda/Slides/tree/thesisdef).
+
+<!--more-->
+
+UPDATE: Done! I've obtained a qualification of *cum laude*!
