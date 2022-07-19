@@ -40,5 +40,11 @@
         "latitude": 46.2332,
         "longitude": 6.05543,
         "title": "CERN"
+    },
+    {
+        "id": 8,
+        "latitude": 50.8732,
+        "longitude": 8.0209,
+        "title": "Universität Siegen"
     }
 ]
