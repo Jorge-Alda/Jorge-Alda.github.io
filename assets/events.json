@@ -142,5 +142,13 @@
         "start": "2022-05-09",
         "end": "2022-05-13",
         "group": 1
+    },
+    {
+        "id": 19,
+        "content": "SMEFT Summer School",
+        "title": "WE-Hereaus Summer School SMEFT'22: Theory and Phenomenology of the Standard Model EFT",
+        "start": "2022-07-11",
+        "end": "2022-07-15",
+        "group": 0
     }
 ]
