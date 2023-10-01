@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Starting in Padova"
+date: 2023-10-01 14:30:25
+categories: blog
+tags: [articles]
+image: /assets/img/Padova.jpg
+---
+
+Today I'm starting a two-year postdoc at Università degli Studi di Padova, in northern Italy. I will be working on axions and ALPs, but also flavour stuff. I will try to keep the blog updated.
+
+By the way, in my [Fediscience account](https://fediscience.org/@jalda), I'm selecting some interesting arXiv preprints every day. Check it out!
+
+Ciao da Padova!
